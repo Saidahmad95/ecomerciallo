@@ -20,4 +20,15 @@ public class MyExceptionHandler {
                 new HttpHeaders(),
                 HttpStatus.BAD_REQUEST);
     }
+
+    @ExceptionHandler({MyLoginException.class})
+    public ResponseEntity<Object> handleLoginException(
+            MyLoginException ex, WebRequest request) {
+        return new ResponseEntity<Object>(
+                ex.getErrors(),
+                new HttpHeaders(),
+                HttpStatus.BAD_REQUEST);
+    }
+
+
 }

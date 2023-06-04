@@ -13,4 +13,9 @@ public interface Messages {
     String FAILED_SET_AUTH="Cannot set user authentication: {}";
     String LOGIN_SUCCESS= "'%s', you signed in successfully !";
     String ROLE_NOT_FOUND= "Role: \'%s\' not found !";
+    String USER_IS_LOCKED= "'%s' is locked !";
+    String USER_IS_DISABLED= "'%s' is disabled !";
+    String BAD_CREDENTIALS= "Username or password incorrect !";
+    String WENT_WRONG= "Something went wrong!";
+
 }
